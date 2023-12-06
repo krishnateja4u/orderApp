@@ -23,6 +23,7 @@ public class OrderManagementApplication {
 	@Autowired
 	private OrderRepository orderRepository;
 	public List<Order> prepareList(){
+		System.out.println("this is prepareList");
 		List<Order> orderList=Stream.of(
 				new Order(101L,"OrderPlaced","Mobile"),
 				new Order(102L,"Cancelled","Refrigerator"),
